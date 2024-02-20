@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-menu transition="scale-transition" :close-on-content-click="false">
       <template v-slot:activator="{ props }">
-        <v-btn color="primary" v-bind="props">
+        <v-btn color="secondary" v-bind="props">
           Cart ({{ store.totalItems }})</v-btn
         >
       </template>

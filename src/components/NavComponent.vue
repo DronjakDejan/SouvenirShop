@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class=" d-flex d-sm-none" >
+    <v-card class="d-flex d-sm-none">
       <v-layout>
         <v-navigation-drawer v-model="drawer" temporary>
           <v-divider></v-divider>
@@ -26,17 +26,18 @@
     </v-card>
   </div>
   <div
-    class="d-flex flex-row ma-2 pa-2 justify-space-evenly align-center bg-tertiary"  scroll-threshold="0"
+    class="d-flex flex-row ma-2 pa-2 justify-center align-center bg-tertiary"
+    scroll-threshold="0"
   >
     <CartComponent />
-    <h1
-      style="cursor: pointer"
-      class="font-weight-bold text-h2 text-primary"
+
+    <v-img
       @click="router.push({ name: 'home' })"
       
-    >
-      Souvenir Shop
-    </h1>
+      :height="180"
+      :width="50"
+      src="@/assets/images/sitnica4.png"
+    ></v-img>
     <v-tabs fixed-tabs bg-color="transparent" class="d-none d-sm-flex">
       <v-tab v-for="link in links" :key="link.text" :to="link.route">
         {{ link.text }}

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="bg-transparent" @click="openItemPage(props.productData.id)">
+    <v-card class="bg-primary" @click="openItemPage(props.productData.id)">
       <v-card-title primary-title>
         {{ props.productData.title }}
       </v-card-title>

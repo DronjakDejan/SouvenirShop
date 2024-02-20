@@ -18,7 +18,7 @@ import NavComponent from "@/components/NavComponent.vue";
 </script>
 <style scoped>
 .v-application {
-  background-color: #E1F0DA;
+  background-color: #ADBC9F;
 }
 </style>
 

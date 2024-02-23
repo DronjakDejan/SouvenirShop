@@ -12,66 +12,7 @@
         sm="6"
         md="4"
       >
-      <v-select
-      class="pe-2"
-        clearable
-        item-color="red"
-        placeholder="search items"
-        validate-on="submit lazy"
-        bg-color="grey-lighten-3"
-        chips
-        label="Filter"
-        :items="[
-          'California',
-          'Colorado',
-          'Florida',
-          'Georgia',
-          'Texas',
-          'Wyoming',
-        ]"
-        multiple
-        variant="underlined"
-      ></v-select>
-      <v-select
-      class="pe-2"
-        clearable
-        item-color="red"
-        placeholder="search items"
-        validate-on="submit lazy"
-        bg-color="grey-lighten-3"
-        chips
-        label="Filter"
-        :items="[
-          'California',
-          'Colorado',
-          'Florida',
-          'Georgia',
-          'Texas',
-          'Wyoming',
-        ]"
-        multiple
-        variant="underlined"
-      ></v-select>
-      <v-select
-      class="pe-2"
-        clearable
-        item-color="red"
-        placeholder="search items"
-        validate-on="submit lazy"
-        bg-color="grey-lighten-3"
-        chips
-        label="Filter"
-        :items="[
-          'California',
-          'Colorado',
-          'Florida',
-          'Georgia',
-          'Texas',
-          'Wyoming',
-        ]"
-        multiple
-        variant="underlined"
-      ></v-select>
+     
     </v-col>
     </v-row>
     </v-container>

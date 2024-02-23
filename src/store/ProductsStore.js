@@ -6,6 +6,7 @@ export const useProductsStore = defineStore("products", {
     products: [],
     productAddedToCart: false,
     cart: [],
+    selectedColors: null,
   }),
   getters: {
     countCartItems() {
@@ -41,15 +42,14 @@ export const useProductsStore = defineStore("products", {
       let index = this.cart.findIndex((product) => product.id === item.id);
       if (index !== -1) {
         this.cart[index].quantity += 1;
-        
       } else {
         item.quantity = 1;
         this.cart.push(item);
       }
       this.productAddedToCart = true; // Postavite productAddedToCart na true
-  setTimeout(() => {
-    this.productAddedToCart = false; // Resetirajte productAddedToCart na false nakon 2 sekunde
-  }, 2000);
+      setTimeout(() => {
+        this.productAddedToCart = false; // Resetirajte productAddedToCart na false nakon 2 sekunde
+      }, 2000);
     },
     removeItem(name) {
       const i = this.cart.lastIndexOf(name);
@@ -69,6 +69,13 @@ export const useProductsStore = defineStore("products", {
         if (this.cart[index].quantity === 0) {
           this.cart = this.cart.filter((product) => product.id !== item.id);
         }
+      }
+    },
+    selectColor(color) {
+      if (this.selectedColors !== color) {
+        this.selectedColors = color;
+      } else {
+        this.selectedColor = null;
       }
     },
   },

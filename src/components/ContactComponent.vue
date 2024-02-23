@@ -35,8 +35,8 @@
           ></v-textarea>
 
           
-          <v-btn class="me-4" @click="v$.$validate"> submit </v-btn>
-          <v-btn @click="clear"> clear </v-btn>
+          <v-btn color="secondary" class="me-4" @click="v$.$validate"> submit </v-btn>
+          <v-btn color="secondary" @click="clear"> clear </v-btn>
         </form>
       </v-col>
     </v-row>

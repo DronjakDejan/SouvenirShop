@@ -3,7 +3,7 @@
     <v-menu transition="scale-transition" :close-on-content-click="false">
       <template v-slot:activator="{ props }">
         <v-btn color="secondary" v-bind="props">
-          Cart ({{ store.totalItems }})</v-btn
+          <v-icon icon="mdi-cart-outline"></v-icon> ({{ store.totalItems }})</v-btn
         >
       </template>
 

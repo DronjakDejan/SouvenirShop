@@ -28,21 +28,23 @@
   <div
     class="d-flex flex-row ma-2 pa-2 justify-center align-center bg-tertiary"
     scroll-threshold="0"
-  >
-    <CartComponent />
-
-    <v-img
+  ><v-img
       @click="router.push({ name: 'home' })"
-      
+      :class="cursos-pointer"
       :height="180"
       :width="50"
       src="@/assets/images/sitnica4.png"
     ></v-img>
+    
+
+    
     <v-tabs fixed-tabs bg-color="transparent" class="d-none d-sm-flex">
       <v-tab v-for="link in links" :key="link.text" :to="link.route">
         {{ link.text }}
       </v-tab>
     </v-tabs>
+    <v-spacer></v-spacer>
+    <CartComponent />
   </div>
 </template>
 <script setup>

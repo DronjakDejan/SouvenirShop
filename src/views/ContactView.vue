@@ -1,7 +1,7 @@
 <template>
-    <div class="contact">
+    
       <ContactComponent/>
-    </div>
+    
   </template>
   
   <script setup>

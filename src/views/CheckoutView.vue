@@ -1,11 +1,9 @@
 <template>
-    <div>
-        
-    </div>
+    <CheckoutComponent/>
 </template>
 
 <script setup>
-
+    import CheckoutComponent from '@/components/CheckoutComponent.vue';
 </script>
 
 <style  scoped>

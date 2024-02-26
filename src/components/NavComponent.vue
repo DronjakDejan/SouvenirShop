@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <v-card class="d-flex d-sm-none">
       <v-layout>
         <v-navigation-drawer v-model="drawer" temporary>
@@ -24,35 +24,42 @@
         <v-btn color="primary" @click.stop="drawer = !drawer"> Toggle </v-btn>
       </v-layout>
     </v-card>
-  </div>
+  </div> -->
+  
   <div
-    class="d-flex flex-row ma-2 pa-2 justify-center align-center bg-tertiary"
+    class="d-flex flex-row ma-2 pa-2 justify-center align-center   "
     scroll-threshold="0"
-  ><v-img
+  >
+  <v-app-bar class="bg-tertiary" :height="100" >
+    <v-img
       @click="router.push({ name: 'home' })"
-      :class="cursos-pointer"
-      :height="180"
+      :class="cursos - pointer"
+      :height="100"
       :width="50"
       src="@/assets/images/sitnica4.png"
     ></v-img>
-    
 
-    
+    <v-spacer></v-spacer>
+
     <v-tabs fixed-tabs bg-color="transparent" class="d-none d-sm-flex">
       <v-tab v-for="link in links" :key="link.text" :to="link.route">
         {{ link.text }}
       </v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
+
+    <v-spacer></v-spacer>
+    <v-divider vertical=""></v-divider>
     <CartComponent />
+  </v-app-bar>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
+//import { ref } from "vue";
 import { useRouter } from "vue-router";
 import CartComponent from "./CartComponent.vue";
 const router = useRouter();
-const drawer = ref(null);
+//const drawer = ref(null);
 const links = [
   { icon: "home", text: "Pocetna", route: "/" },
   { icon: "shop", text: "Shop", route: "/shop" },

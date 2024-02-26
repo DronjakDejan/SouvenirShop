@@ -1,7 +1,7 @@
 <template>
-  <div>
+  
     <ShopComponent/>
-  </div>
+  
 </template>
 
 <script setup>

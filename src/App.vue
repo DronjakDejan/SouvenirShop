@@ -8,7 +8,7 @@
   
     <FooterComponent/>  
   
-
+    
   </v-app>
 </template>
 

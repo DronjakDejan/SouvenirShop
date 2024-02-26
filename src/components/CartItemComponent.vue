@@ -1,8 +1,8 @@
 <template>
   
   <div class="cart-item" v-if="store.cart.length">
-    <v-col cols="12">
-      <v-card color="primary">
+    <v-col cols="12" >
+      <v-card color="bg-tertiary">
         <div class="d-flex flex-no-wrap justify-space-between">
           <div>
             <v-card-title class="text-h5">

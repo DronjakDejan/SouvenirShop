@@ -1,8 +1,8 @@
 <template>
-    <div>
+  
 
         <ItemComponent />
-    </div>
+    
   </template>
   
   <script setup>
